@@ -1,24 +1,18 @@
 const menu = document.querySelector('.menu');
-const hamburgerMenu = document.querySelector('.hamburger-menu')
-const iconBars = document.querySelector('.icon-bars');
+const hamburgerMenu = document.querySelector('.hamburger-menu');
+const iconBar = document.querySelector('.icon-bar');
 const iconClose = document.querySelector('.icon-close');
 
-
-HamburgerMenu.addEventListener('click', displayMenu);
-menu.addEventListener('click', displayMenu);
+hamburgerMenu.addEventListener('click', displayMenu);
 
 function displayMenu() {
-
-
-
     if (menu.classList.contains('tampil')) {
         menu.classList.remove('tampil');
-        iconBars.style.display = 'inline';
+        iconBar.style.display = 'inline';
         iconClose.style.display = 'none';
     } else {
         menu.classList.add('tampil');
-        iconBars.style.display = 'none';
+        iconBar.style.display = 'none';
         iconClose.style.display = 'inline';
     }
 }
-

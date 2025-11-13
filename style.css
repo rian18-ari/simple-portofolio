@@ -380,7 +380,10 @@ button.hamburger-menu {
     font-size: 1.5rem;
     color: #fff;
     cursor: pointer;
-    display: none;
+}
+
+button.hamburger-menu > .icon-bar {
+    display: inline;
 }
 
 button.hamburger-menu>.icon-close {
